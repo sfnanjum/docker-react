@@ -6,5 +6,4 @@ before_install:
   - docker build -t sfnanjum/docker-react -f Dockerfile.dev .
 
 script:
-  - npm uninstall babel-jest@24.8.0
   - docker run sfnanjum/docker-react npm run test -- -- coverage
