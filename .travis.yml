@@ -6,4 +6,5 @@ before_install:
   - docker build -t sfnanjum/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run sfnanjum/docker-react npm run test -- -- coverage
+  - docker run sfnanjum/docker-react 
+  - docker exec -it sfnanjum/docker-react npm run test -- -- coverage
